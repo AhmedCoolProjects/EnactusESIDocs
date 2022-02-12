@@ -1,0 +1,35 @@
+@tailwind utilities;
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #ea9b41;
+  --ifm-color-primary-dark: #e68b22;
+  --ifm-color-primary-darker: #e48519;
+  --ifm-color-primary-darkest: #cf7917;
+  --ifm-color-primary-light: #ba6d15;
+  --ifm-color-primary-lighter: #b06714;
+  --ifm-color-primary-lightest: #915510;
+  --ifm-code-font-size: 95%;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+html[data-theme="dark"] {
+  --ifm-color-primary: #cf7917;
+  --ifm-color-primary-dark: #ba6d15;
+  --ifm-color-primary-darker: #b06714;
+  --ifm-color-primary-darkest: #915510;
+  --ifm-color-primary-light: #e48519;
+  --ifm-color-primary-lighter: #e68b22;
+  --ifm-color-primary-lightest: #ea9b41;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme="dark"] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
