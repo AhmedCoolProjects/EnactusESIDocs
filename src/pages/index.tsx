@@ -29,7 +29,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={"WELCOME"}
-      description={"ENACTUS ESI, The ENACTUS club for ESI inovative students"}>
+      description={"ENACTUS ESI, The ENACTUS club for ESI innovative students"}>
       <HomepageHeader />
       <main>
         <HomepageBoardMemebers /> <EnactusGoals />
