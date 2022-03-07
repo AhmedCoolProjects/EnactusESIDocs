@@ -1,7 +1,9 @@
 import {
+  BoardMemberCardPostEnum,
+  BoardMemberCardType,
   EnactusGoalCardProps,
   EnactusGoalCardTitleEnum,
-} from "../components/types";
+} from "@site/types";
 
 export const EnactusGoalsList: EnactusGoalCardProps[] = [
   {
@@ -9,7 +11,7 @@ export const EnactusGoalsList: EnactusGoalCardProps[] = [
     number: 1,
     description:
       "No Poverty means that every person in the world has access to food, water, hygiene, shelter, and health care.",
-    image: "img/favicon.ico",
+    image: "img/goals/1.png",
     color: "#C71E35",
   },
   {
@@ -17,7 +19,7 @@ export const EnactusGoalsList: EnactusGoalCardProps[] = [
     number: 2,
     description:
       "Zero Hunger means that all people have access to enough food to eat and drink, and that no one is hungry or has to starve.",
-    image: "img/favicon.ico",
+    image: "img/goals/2.png",
     color: "#9A7429",
   },
   {
@@ -25,13 +27,13 @@ export const EnactusGoalsList: EnactusGoalCardProps[] = [
     number: 3,
     description:
       "Good Health and Well-being means that every person in the world has access to healthcare, and that no one is sick or injured.",
-    image: "img/favicon.ico",
+    image: "img/goals/3.png",
     color: "#346D30",
   },
   {
     title: EnactusGoalCardTitleEnum["Quality Education"],
     number: 4,
-    image: "img/favicon.ico",
+    image: "img/goals/4.png",
     color: "#901722",
     description:
       "Quality Education means that every child in the world has access to education that is affordable, accessible, and inclusive.",
@@ -41,90 +43,124 @@ export const EnactusGoalsList: EnactusGoalCardProps[] = [
     number: 5,
     color: "#EF402C",
     description: "Achieve gender equality and empower all women and girls",
-    image: "img/favicon.ico",
+    image: "img/goals/5.png",
   },
   {
     title: EnactusGoalCardTitleEnum["Clean water & sanitation"],
     number: 6,
     color: "#1C90AE",
+    image: "img/goals/6.png",
     description: "",
-    image: "img/favicon.ico",
   },
   {
     title: EnactusGoalCardTitleEnum["affordable & clean energy"],
     number: 7,
     color: "#CEA210",
     description: "",
-    image: "img/favicon.ico",
+    image: "img/goals/7.png",
   },
   {
     title: EnactusGoalCardTitleEnum["decent work & economic growth"],
     number: 8,
     color: "#5E1228",
     description: "",
-    image: "img/favicon.ico",
+    image: "img/goals/8.png",
   },
   {
     title: EnactusGoalCardTitleEnum["Industry, innovation & infrastructure"],
     number: 9,
     color: "#F26A2D",
     description: "",
-    image: "img/favicon.ico",
+    image: "img/goals/9.png",
   },
   {
     title: EnactusGoalCardTitleEnum["reduced indequalities"],
     number: 10,
     color: "#850D3E",
     description: "",
-    image: "img/favicon.ico",
+    image: "img/goals/10.png",
   },
   {
     title: EnactusGoalCardTitleEnum["sustainable cities & communities"],
     number: 11,
     color: "#F99E29",
     description: "",
-    image: "img/favicon.ico",
+    image: "img/goals/11.png",
   },
   {
     title: EnactusGoalCardTitleEnum["responsible consumption & production"],
     number: 12,
     color: "#BF8D2C",
     description: "",
-    image: "img/favicon.ico",
+    image: "img/goals/12.png",
   },
   {
     title: EnactusGoalCardTitleEnum["climate action"],
     number: 13,
     color: "#407F46",
     description: "",
-    image: "img/favicon.ico",
+    image: "img/goals/13.png",
   },
   {
     title: EnactusGoalCardTitleEnum["life below water"],
     number: 14,
     color: "#176D98",
     description: "",
-    image: "img/favicon.ico",
+    image: "img/goals/14.png",
   },
   {
     title: EnactusGoalCardTitleEnum["life on land"],
     number: 15,
     color: "#5ABA47",
     description: "",
-    image: "img/favicon.ico",
+    image: "img/goals/15.png",
   },
   {
     title: EnactusGoalCardTitleEnum["peace, justice & strong institutions"],
     number: 16,
     color: "#116090",
     description: "",
-    image: "img/favicon.ico",
+    image: "img/goals/16.png",
   },
   {
     title: EnactusGoalCardTitleEnum["partnership for the goals"],
     number: 17,
     color: "#0B2638",
     description: "",
-    image: "img/favicon.ico",
+    image: "img/goals/17.png",
+  },
+];
+export const BoardMembersList: BoardMemberCardType[] = [
+  {
+    fullName: "Assia ERAGGRAGUI",
+    image: "/img/members/assia_eraggragui.jpg",
+    position: 1,
+    post: BoardMemberCardPostEnum["Team Leader"],
+    outlook: "assia.eraggragui@esi.ac.ma",
+    linkedIn: "https://www.linkedin.com/in/ahmed-bargady/",
+  },
+  {
+    fullName: "Amine BENZAHRA",
+    image: "/img/members/amin_ben.jpg",
+    position: 2,
+    post: BoardMemberCardPostEnum["Vice Team Leader"],
+    outlook: "ahmed.bargady@esi.ac.ma",
+    linkedIn: "",
+  },
+  {
+    fullName: "Ahmed BARGADY",
+    image: "/img/members/ahmed_bargady.jpg",
+    position: 3,
+    post: BoardMemberCardPostEnum["Projects Head"],
+    outlook: "ahmed.bargady@esi.ac.ma",
+    linkedIn: "",
+  },
+  {
+    fullName: "Hafsa BOANANI",
+    image: "/img/members/hafsa.jpg",
+    position: 4,
+    post: BoardMemberCardPostEnum["Events Head"],
+    outlook: "ahmed.bargady@esi.ac.ma",
+    linkedIn: "",
   },
 ];

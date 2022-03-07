@@ -4,8 +4,7 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
-import HomepageBoardMemebers from "../components/HomepageBoardMemebers";
-import EnactusGoals from "../components/EnactusGoals";
+import { EnactusGoals, HomepageBoardMemebers } from "../components";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();

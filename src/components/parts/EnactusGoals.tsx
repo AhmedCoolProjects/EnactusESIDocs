@@ -1,9 +1,9 @@
+import { EnactusGoalCardProps } from "@app-types";
+import { EnactusGoalsList } from "@site/src/constants";
 import React from "react";
-import { EnactusGoalsList } from "../constants/data";
-import { EnactusGoalCardProps } from "./types";
-import EnactusGoalCard from "./cards/EnactusGoalCard";
+import { EnactusGoalCard } from "../cards";
 
-function EnactusGoals() {
+export function EnactusGoals() {
   return (
     <div>
       <h1 className="uppercase text-4xl mt-4 underline font-semibold text-center">
@@ -17,5 +17,3 @@ function EnactusGoals() {
     </div>
   );
 }
-
-export default EnactusGoals;

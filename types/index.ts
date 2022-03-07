@@ -24,3 +24,19 @@ export type EnactusGoalCardProps = {
   image: string;
   color: string;
 };
+export type BoardMemberCardType = {
+  position: number;
+  fullName: string;
+  image: string;
+  post: BoardMemberCardPostEnum;
+  linkedIn?: string;
+  outlook?: string;
+};
+export enum BoardMemberCardPostEnum {
+  "Team Leader",
+  "Vice Team Leader",
+  "Outreach & Community Management Head",
+  "Projects Head",
+  "Opportunities & Workshops Head",
+  "Events Head",
+}

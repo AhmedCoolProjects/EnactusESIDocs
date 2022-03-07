@@ -1,24 +1,7 @@
+import { BoardMemberCardPostEnum, BoardMemberCardType } from "@site/types";
 import React from "react";
-// import "../../css/tailwindcss.custom.css";
 
-export type BoardMemberCardType = {
-  position: number;
-  fullName: string;
-  image: string;
-  post: BoardMemberCardPostEnum;
-  linkedIn?: string;
-  outlook?: string;
-};
-export enum BoardMemberCardPostEnum {
-  "Team Leader",
-  "Vice Team Leader",
-  "Outreach & Community Management Head",
-  "Projects Head",
-  "Opportunities & Workshops Head",
-  "Events Head",
-}
-
-function BoardMemberCard(props: BoardMemberCardType) {
+export function BoardMemberCard(props: BoardMemberCardType) {
   const { position, fullName, image, post, linkedIn, outlook } = props;
   return (
     <div className="w-full shadow-md shadow-gray-700 flex flex-col items-center p-3 space-y-3">
@@ -40,5 +23,3 @@ function BoardMemberCard(props: BoardMemberCardType) {
     </div>
   );
 }
-
-export default BoardMemberCard;

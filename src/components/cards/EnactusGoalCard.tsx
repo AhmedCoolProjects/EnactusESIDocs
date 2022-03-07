@@ -1,10 +1,7 @@
-import {
-  EnactusGoalCardProps,
-  EnactusGoalCardTitleEnum,
-} from "@site/src/components/types";
+import { EnactusGoalCardProps, EnactusGoalCardTitleEnum } from "@site/types";
 import React from "react";
 
-function EnactusGoalCard(props: EnactusGoalCardProps) {
+export function EnactusGoalCard(props: EnactusGoalCardProps) {
   const { color, title, number, description, image } = props;
   return (
     <div
@@ -21,11 +18,9 @@ function EnactusGoalCard(props: EnactusGoalCardProps) {
       <img
         src={image}
         alt={EnactusGoalCardTitleEnum[title]}
-        className="w-3/4 object-contain h-auto"
+        className="w-3/4 object-contain h-auto rounded-md"
       />
       <h1 className="text-base font-light text-center">{description}</h1>
     </div>
   );
 }
-
-export default EnactusGoalCard;
