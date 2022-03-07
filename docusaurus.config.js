@@ -6,7 +6,7 @@ const config = {
   title: "ENACTUS ESI",
   tagline:
     "Students Business Innovation to Create a Better and More Sustainable World",
-  url: "https://enactusesi.vercel.app",
+  url: "https://enactus.codeesi.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",

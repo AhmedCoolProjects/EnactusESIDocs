@@ -27,7 +27,9 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   return (
-    <Layout title={"WELCOME"} description={"siteConfig.description"}>
+    <Layout
+      title={"WELCOME"}
+      description={"ENACTUS ESI, The ENACTUS club for ESI inovative students"}>
       <HomepageHeader />
       <main>
         <HomepageBoardMemebers /> <EnactusGoals />
