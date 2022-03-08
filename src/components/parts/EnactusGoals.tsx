@@ -1,5 +1,5 @@
-import { EnactusGoalCardProps } from "@app-types";
 import { EnactusGoalsList } from "@site/src/constants";
+import { EnactusGoalCardProps } from "@site/types";
 import React from "react";
 import { EnactusGoalCard } from "../cards";
 

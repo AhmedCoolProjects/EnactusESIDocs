@@ -20,7 +20,9 @@ export function EnactusGoalCard(props: EnactusGoalCardProps) {
         alt={EnactusGoalCardTitleEnum[title]}
         className="w-3/4 object-contain h-auto rounded-md"
       />
-      <h1 className="text-base font-light text-center">{description}</h1>
+      <h1 className="text-base  lowercase font-light text-center">
+        {description}
+      </h1>
     </div>
   );
 }
