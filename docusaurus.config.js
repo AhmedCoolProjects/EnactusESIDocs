@@ -85,10 +85,14 @@ const config = {
             position: "left",
           },
           {
-            href: "https://github.com/AhmedCoolProjects/EnactusESI",
-            label: "Github",
+            type: "localeDropdown",
             position: "right",
           },
+          // {
+          //   href: "https://github.com/AhmedCoolProjects/EnactusESI",
+          //   label: "Github",
+          //   position: "right",
+          // },
           {
             type: "search",
             position: "right",
@@ -173,6 +177,19 @@ const config = {
       //   //... other Algolia params
       // },
     }),
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "fr", "ar"],
+    localeConfigs: {
+      en: {
+        htmlLang: "en-GB",
+      },
+      // You can omit a locale (e.g. fr) if you don't need to override the defaults
+      ar: {
+        direction: "rtl",
+      },
+    },
+  },
 };
 
 module.exports = config;

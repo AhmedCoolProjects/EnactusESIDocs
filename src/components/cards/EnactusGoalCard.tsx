@@ -1,4 +1,4 @@
-import { EnactusGoalCardProps, EnactusGoalCardTitleEnum } from "@site/types";
+import { EnactusGoalCardProps } from "@site/types";
 import React from "react";
 
 export function EnactusGoalCard(props: EnactusGoalCardProps) {
@@ -11,13 +11,11 @@ export function EnactusGoalCard(props: EnactusGoalCardProps) {
       }}>
       <div className="flex h-12 flex-row items-center space-x-2">
         <h1 className="text-2xl">{number}.</h1>
-        <h1 className="text-xl text-opacity-80">
-          {EnactusGoalCardTitleEnum[title]}
-        </h1>
+        <h1 className="text-xl text-opacity-80">{title}</h1>
       </div>
       <img
         src={image}
-        alt={EnactusGoalCardTitleEnum[title]}
+        alt={title}
         className="w-3/4 object-contain h-auto rounded-md"
       />
       <h1 className="text-base  lowercase font-light text-center">

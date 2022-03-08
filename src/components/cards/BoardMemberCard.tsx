@@ -1,4 +1,4 @@
-import { BoardMemberCardPostEnum, BoardMemberCardType } from "@site/types";
+import { BoardMemberCardType } from "@site/types";
 import React from "react";
 
 export function BoardMemberCard(props: BoardMemberCardType) {
@@ -11,13 +11,13 @@ export function BoardMemberCard(props: BoardMemberCardType) {
         alt={fullName}
       />
       <h1 className="text-2xl ">{fullName}</h1>
-      <h1 className="text-xl opacity-80 ">{BoardMemberCardPostEnum[post]}</h1>
+      <h1 className="text-xl opacity-80 ">{post}</h1>
       <div className="flex flex-row items-center justify-around py-3 w-full ">
         <a href={linkedIn} target="_blank">
-          <img src="/img/logos/linkedin.svg" className="w-10 h-10" />
+          <img src="img/logos/linkedin.svg" className="w-10 h-10" />
         </a>
         <a href={`mailto:${outlook}`} target="_blank">
-          <img src="/img/logos/outlook.svg" className="w-10 h-10 " />
+          <img src="img/logos/outlook.svg" className="w-10 h-10 " />
         </a>
       </div>
     </div>
