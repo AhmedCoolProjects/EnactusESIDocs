@@ -4,5 +4,3 @@ title: Introduction
 ---
 
 # Introduction
-
-Projects
