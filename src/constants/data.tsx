@@ -267,7 +267,7 @@ export const EnactusGoalsList: EnactusGoalCardProps[] = [
 export const BoardMembersList: BoardMemberCardType[] = [
   {
     id: "1",
-    fullName: "Assia ERAGGRAGUI",
+    fullName: "Assia ERGUIGUE",
     image: IMAGES.assia_eraggragui,
     position: 1,
     post: translate({
