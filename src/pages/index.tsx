@@ -48,7 +48,11 @@ export default function Home(): JSX.Element {
       })}>
       <HomepageHeader />
       <main>
-        <HomepageBoardMemebers /> <EnactusGoals />
+        <HomepageBoardMemebers
+          title="ENACTUS ESI BOARD"
+          ids={["1", "2", "3", "4"]}
+        />
+        <EnactusGoals />
       </main>
     </Layout>
   );

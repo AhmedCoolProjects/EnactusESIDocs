@@ -1,3 +1,4 @@
+import { IMAGES } from "@site/src/constants";
 import { BoardMemberCardType } from "@site/types";
 import React from "react";
 
@@ -14,10 +15,10 @@ export function BoardMemberCard(props: BoardMemberCardType) {
       <h1 className="text-xl opacity-80 ">{post}</h1>
       <div className="flex flex-row items-center justify-around py-3 w-full ">
         <a href={linkedIn} target="_blank">
-          <img src="img/logos/linkedin.svg" className="w-10 h-10" />
+          <IMAGES.linkedinLogo width={40} height={40} />
         </a>
         <a href={`mailto:${outlook}`} target="_blank">
-          <img src="img/logos/outlook.svg" className="w-10 h-10 " />
+          <IMAGES.outlookLogo width={40} height={40} />
         </a>
       </div>
     </div>

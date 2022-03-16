@@ -26,6 +26,7 @@ export type EnactusGoalCardProps = {
   color: string;
 };
 export type BoardMemberCardType = {
+  id: string;
   position: number;
   fullName: string;
   image: string;
@@ -46,3 +47,10 @@ export type BoardMemberCardType = {
 //   OPPORTUNITIES_WORKSHOPS_HEAD = "Opportunities & Workshops Head",
 //   EVENTS_HEAD = "Events Head",
 // }
+export type CreatorCardType = {
+  name: string;
+  image: string;
+  profession: string;
+  github?: string;
+  link?: string;
+};

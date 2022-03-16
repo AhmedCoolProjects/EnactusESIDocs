@@ -4,6 +4,7 @@ import {
   EnactusGoalCardProps,
   // EnactusGoalCardTitleEnum,
 } from "@site/types";
+import { IMAGES } from "./images";
 
 export const EnactusGoalsList: EnactusGoalCardProps[] = [
   {
@@ -265,8 +266,9 @@ export const EnactusGoalsList: EnactusGoalCardProps[] = [
 ];
 export const BoardMembersList: BoardMemberCardType[] = [
   {
+    id: "1",
     fullName: "Assia ERAGGRAGUI",
-    image: "img/members/assia_eraggragui.jpg",
+    image: IMAGES.assia_eraggragui,
     position: 1,
     post: translate({
       message: "Team Leader",
@@ -276,8 +278,9 @@ export const BoardMembersList: BoardMemberCardType[] = [
     linkedIn: "https://www.linkedin.com/in/ahmed-bargady/",
   },
   {
+    id: "2",
     fullName: "Amine BENZAHRA",
-    image: "img/members/amin_ben.jpg",
+    image: IMAGES.amin_ben,
     position: 2,
     post: translate({
       message: "Vice Team Leader",
@@ -287,16 +290,18 @@ export const BoardMembersList: BoardMemberCardType[] = [
     linkedIn: "",
   },
   {
+    id: "3",
     fullName: "Ahmed BARGADY",
-    image: "img/members/ahmed_bargady.jpg",
+    image: IMAGES.ahmed_bargady,
     position: 3,
     post: translate({ message: "Projects Head", description: "projects head" }),
     outlook: "ahmed.bargady@esi.ac.ma",
     linkedIn: "",
   },
   {
+    id: "4",
     fullName: "Hafsa BOANANI",
-    image: "img/members/hafsa.jpg",
+    image: IMAGES.hafsa,
     position: 4,
     post: translate({ message: "Events Head", description: "events head" }),
     outlook: "ahmed.bargady@esi.ac.ma",

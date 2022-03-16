@@ -19,6 +19,7 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        // projects
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           lastVersion: "current",
@@ -27,10 +28,10 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
+        // blog
         blog: {
           showReadingTime: true,
           include: ["**/*.{md,mdx}"],
-          // Please change this to your repo.
           editUrl: "https://github.com/AhmedCoolProjects/EnactusESI/tree/main",
         },
         theme: {
@@ -40,6 +41,7 @@ const config = {
     ],
   ],
   plugins: [
+    // events
     [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
@@ -47,6 +49,21 @@ const config = {
         id: "docs-events",
         path: "docs-events",
         routeBasePath: "docs-events",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://github.com/AhmedCoolProjects/CodeESIDocs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+      },
+    ],
+    // workshops
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "docs-workshops",
+        path: "docs-workshops",
+        routeBasePath: "docs-workshops",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://github.com/AhmedCoolProjects/CodeESIDocs/tree/main",
         showLastUpdateAuthor: true,
@@ -74,8 +91,14 @@ const config = {
             label: "Projects",
           },
           {
+            to: "/docs-workshops/intro",
+            label: "Workshops",
+            position: "left",
+            activeBaseRegex: `/docs-workshops/`,
+          },
+          {
             to: "/docs-events/intro",
-            label: "Workshops & Events",
+            label: "Events",
             position: "left",
             activeBaseRegex: `/docs-events/`,
           },
@@ -84,10 +107,12 @@ const config = {
             label: "Blog",
             position: "left",
           },
-          {
-            type: "localeDropdown",
-            position: "right",
-          },
+          // for translation
+          // {
+          //   type: "localeDropdown",
+          //   position: "right",
+          // },
+          //  for github link
           // {
           //   href: "https://github.com/AhmedCoolProjects/EnactusESI",
           //   label: "Github",
@@ -115,7 +140,11 @@ const config = {
             title: "Workshops & Events",
             items: [
               {
-                label: "2022",
+                label: "Projects 2022",
+                to: "/docs-workshops/2022/intro",
+              },
+              {
+                label: "Events 2022",
                 to: "/docs-events/2022/intro",
               },
               {
@@ -124,6 +153,7 @@ const config = {
               },
             ],
           },
+
           {
             title: "Community",
             items: [
@@ -177,19 +207,19 @@ const config = {
       //   //... other Algolia params
       // },
     }),
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en", "fr"],
-    localeConfigs: {
-      en: {
-        htmlLang: "en-GB",
-      },
-      // You can omit a locale (e.g. fr) if you don't need to override the defaults
-      // ar: {
-      //   direction: "rtl",
-      // },
-    },
-  },
+  // i18n: {
+  //   defaultLocale: "en",
+  //   locales: ["en", "fr"],
+  //   localeConfigs: {
+  //     en: {
+  //       htmlLang: "en-GB",
+  //     },
+  //     // You can omit a locale (e.g. fr) if you don't need to override the defaults
+  //     // ar: {
+  //     //   direction: "rtl",
+  //     // },
+  //   },
+  // },
 };
 
 module.exports = config;
